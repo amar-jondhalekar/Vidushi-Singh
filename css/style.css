@@ -40,6 +40,27 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+  /* Cursor Circle */
+.cursor {
+  position: fixed;
+  width: 17px;
+  height: 17px;
+  background-color: yellow;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s linear;
+  z-index: 9999;
+}
+
+/* Expanding Effect on Click */
+.cursor-expand {
+  width: 30px;
+  height: 30px;
+  transition: width 0.2s ease-out, height 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
